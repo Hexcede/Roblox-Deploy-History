@@ -20,8 +20,8 @@ namespace RobloxDeployHistory
 
         public override string ToString()
         {
-            string date = TimeStamp.ToString("MMM dd", CultureInfo.InvariantCulture);
-            return $"{VersionId} ({date})";
+            string date = TimeStamp.ToString("MMM dd hh:mm tt", CultureInfo.InvariantCulture);
+            return $"v{Version} {date} ({VersionGuid})";
         }
     }
 }
